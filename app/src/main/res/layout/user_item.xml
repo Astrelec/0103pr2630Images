@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewUserItemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="UserId: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUserItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Name: "
+        app:layout_constraintStart_toStartOf="@+id/textViewUserItemId"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserItemId" />
+
+    <TextView
+        android:id="@+id/textViewUserItemUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Username: "
+        app:layout_constraintStart_toStartOf="@+id/textViewUserItemName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserItemName" />
+
+    <TextView
+        android:id="@+id/textViewUserItemEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email: "
+        app:layout_constraintStart_toStartOf="@+id/textViewUserItemUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserItemUsername" />
+
+    <TextView
+        android:id="@+id/textViewUserItemPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone: "
+        app:layout_constraintStart_toStartOf="@+id/textViewUserItemEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserItemEmail" />
+
+    <TextView
+        android:id="@+id/textViewUserItemWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Website: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserItemPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserItemPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
